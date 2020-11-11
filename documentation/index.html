@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-demo.css">
+
+        <title>Trail Documentation</title>
+    </head>
+    <body>
+
+        <!--Main menu-->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="content col text-center">
+                        <div class="title">
+    						<i class="fas fa-file-alt"></i> Documentation
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Main menu-->
+
+        <!--Documentation Start-->
+        <div class="documentation container">
+            <div class="row">
+                <div class="col-md-3 d-md-block d-none">
+                    <nav class="sidebar">
+						<ul>
+                            <li><a class="active" href="#intro">Intro</a></li>
+                            <li><a href="#project" class="">Project Structure</a></li>
+                            <li><a href="#html" class="">HTML Structure</a>
+								<ul>
+									<li><a href="#head" class="">Head</a></li>
+									<li><a href="#body" class="">Body</a></li>
+									<li><a href="#home" class="">Home Section</a></li>
+									<li><a href="#about" class="">About Section</a></li>
+									<li><a href="#portfolio" class="">Portfolio Section</a></li>
+									<li><a href="#blog" class="">Blog Section</a></li>
+									<li><a href="#contact" class="">Contact Section</a></li>
+									<li><a href="#elements" class="">Template Elements
+</a></li>
+								</ul>
+							</li>
+                            <li><a href="#css" class="">CSS Structure</a></li>
+                            <li><a href="#js" class="">JavaScript Structure</a></li>
+                            <li><a href="#source" class="">Sources</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-9">
+                    <div class="content">
+
+                        <div id="intro" class="main">
+                            <h1>Trail</h1>
+                            <hr>
+							<p class="thanks">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form in themeforest.net. Thanks so much!</p>
+							<hr>
+                            <ul>
+                                <li>Author: <a href="https://themeforest.net/user/malyarchuk">Malyarchuk</a></li>
+								<li>Created: 06.01.2020</li>
+                            </ul>
+                            <hr>
+                        </div>
+
+                        <div id="project" class="main">
+                            <h2 id="projectstructure">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+									<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<rect x="0" y="0" width="24" height="24"/>
+										<path d="M3.5,21 L20.5,21 C21.3284271,21 22,20.3284271 22,19.5 L22,8.5 C22,7.67157288 21.3284271,7 20.5,7 L10,7 L7.43933983,4.43933983 C7.15803526,4.15803526 6.77650439,4 6.37867966,4 L3.5,4 C2.67157288,4 2,4.67157288 2,5.5 L2,19.5 C2,20.3284271 2.67157288,21 3.5,21 Z" fill="#000000" opacity="0.3"/>
+										<path d="M8.63657261,16.4632487 C7.65328954,15.8436137 7,14.7480988 7,13.5 C7,11.5670034 8.56700338,10 10.5,10 C12.263236,10 13.7219407,11.3038529 13.9645556,13 L15,13 C16.1045695,13 17,13.8954305 17,15 C17,16.1045695 16.1045695,17 15,17 L10,17 C9.47310652,17 8.99380073,16.7962529 8.63657261,16.4632487 Z" fill="#000000"/>
+									</g>
+								</svg> Project Structure
+							</h2>
+                            <p>Template has the following project structure:</p>
+                            <div class="file-tree">
+                                <ul>
+                                    <li><i class="far fa-folder" aria-hidden="true"></i>documentation</li>
+                                    <li><i class="far fa-folder-open" aria-hidden="true"></i>html
+                                        <ul>
+                                            <li><i class="far fa-folder" aria-hidden="true"></i>css</li>
+                                            <li><i class="far fa-folder" aria-hidden="true"></i>fonts</li>
+                                            <li><i class="far fa-folder" aria-hidden="true"></i>img</li>
+                                            <li><i class="far fa-folder" aria-hidden="true"></i>js</li>
+                                            <li><i class="far fa-file-code" aria-hidden="true"></i>index-*.html</li>
+											<li><i class="far fa-file-code" aria-hidden="true"></i>blog-list.html</li>
+											<li><i class="far fa-file-code" aria-hidden="true"></i>blog-page.html</li>
+											<li><i class="far fa-file-code" aria-hidden="true"></i>single-work.html</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+						
+						<br><hr><br>
+						
+                        <div id="html" class="main">
+                            <h2 id="htmlstructure">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+									<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<rect x="0" y="0" width="24" height="24"/>
+										<path d="M15.2718029,8.68536757 C14.8932864,8.28319382 14.9124644,7.65031935 15.3146382,7.27180288 C15.7168119,6.89328641 16.3496864,6.91246442 16.7282029,7.31463817 L20.7282029,11.5646382 C21.0906029,11.9496882 21.0906029,12.5503176 20.7282029,12.9353676 L16.7282029,17.1853676 C16.3496864,17.5875413 15.7168119,17.6067193 15.3146382,17.2282029 C14.9124644,16.8496864 14.8932864,16.2168119 15.2718029,15.8146382 L18.6267538,12.2500029 L15.2718029,8.68536757 Z M8.72819712,8.6853647 L5.37324625,12.25 L8.72819712,15.8146353 C9.10671359,16.2168091 9.08753558,16.8496835 8.68536183,17.2282 C8.28318808,17.6067165 7.65031361,17.5875384 7.27179713,17.1853647 L3.27179713,12.9353647 C2.90939712,12.5503147 2.90939712,11.9496853 3.27179713,11.5646353 L7.27179713,7.3146353 C7.65031361,6.91246155 8.28318808,6.89328354 8.68536183,7.27180001 C9.08753558,7.65031648 9.10671359,8.28319095 8.72819712,8.6853647 Z" fill="#000000" fill-rule="nonzero"/>
+									</g>
+								</svg> HTML Structure
+							</h2>
+                            <p>Html-files use <b>UTF-8</b> codepage. Use the editor with <b>UTF-8</b> support to avoid problems with unreadable symbols.</p>
+							<div id="head" class="dop">
+                            	<h3>							
+									<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<polygon points="0 0 24 0 24 24 0 24"/>
+											<path d="M3.70710678,15.7071068 C3.31658249,16.0976311 2.68341751,16.0976311 2.29289322,15.7071068 C1.90236893,15.3165825 1.90236893,14.6834175 2.29289322,14.2928932 L8.29289322,8.29289322 C8.67147216,7.91431428 9.28105859,7.90106866 9.67572463,8.26284586 L15.6757246,13.7628459 C16.0828436,14.1360383 16.1103465,14.7686056 15.7371541,15.1757246 C15.3639617,15.5828436 14.7313944,15.6103465 14.3242754,15.2371541 L9.03007575,10.3841378 L3.70710678,15.7071068 Z" fill="#000000" fill-rule="nonzero" transform="translate(9.000003, 11.999999) rotate(-270.000000) translate(-9.000003, -11.999999) "/>
+											<rect fill="#000000" opacity="0.3" x="12" y="17" width="10" height="2" rx="1"/>
+										</g>
+									</svg> Head
+								</h3>
+
+                            	<p><b>&lt;title&gt;</b> tag: Is the title of your website</p>
+
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;title&gt;Website Name&lt;/title&gt; </code></pre>
+
+                            	<p><b>&lt;link&gt;</b> tags: These tags contains Css Structure for appearance</p>
+
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;link rel="stylesheet" href="css/*.css" &gt; </code></pre>
+								<p><b>&lt;style.css&gt;</b> contains the basic structure of the site</p>
+							</div>
+							<br><hr><br>
+							
+							<div id="body" class="dop">
+                            	<h3>								
+									<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect x="0" y="0" width="24" height="24"/>
+											<path d="M19,11 L20,11 C21.6568542,11 23,12.3431458 23,14 C23,15.6568542 21.6568542,17 20,17 L19,17 L19,20 C19,21.1045695 18.1045695,22 17,22 L5,22 C3.8954305,22 3,21.1045695 3,20 L3,17 L5,17 C6.65685425,17 8,15.6568542 8,14 C8,12.3431458 6.65685425,11 5,11 L3,11 L3,8 C3,6.8954305 3.8954305,6 5,6 L8,6 L8,5 C8,3.34314575 9.34314575,2 11,2 C12.6568542,2 14,3.34314575 14,5 L14,6 L17,6 C18.1045695,6 19,6.8954305 19,8 L19,11 Z" fill="#000000" opacity="0.3"/>
+										</g>
+									</svg> Body
+								</h3>
+                            	<p><b>&lt;body&gt;</b> tag contains the main website which users can view.</p>
+
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;body&gt;
+    &lt;!-- Website Sections Area --&gt;
+&lt;/body&gt;</code></pre>
+							</div>
+							
+							<br><hr><br>
+							
+							<div id="home" class="dop">
+                            	<h3>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect x="0" y="0" width="24" height="24"/>
+											<path d="M3.95709826,8.41510662 L11.47855,3.81866389 C11.7986624,3.62303967 12.2013376,3.62303967 12.52145,3.81866389 L20.0429,8.41510557 C20.6374094,8.77841684 21,9.42493654 21,10.1216692 L21,19.0000642 C21,20.1046337 20.1045695,21.0000642 19,21.0000642 L4.99998155,21.0000673 C3.89541205,21.0000673 2.99998155,20.1046368 2.99998155,19.0000673 C2.99998155,19.0000663 2.99998155,19.0000652 2.99998155,19.0000642 L2.99999828,10.1216672 C2.99999935,9.42493561 3.36258984,8.77841732 3.95709826,8.41510662 Z" fill="#000000" opacity="0.3"/>
+											<path d="M13.8,12 C13.1562,12 12.4033,12.7298529 12,13.2 C11.5967,12.7298529 10.8438,12 10.2,12 C9.0604,12 8.4,12.8888719 8.4,14.0201635 C8.4,15.2733878 9.6,16.6 12,18 C14.4,16.6 15.6,15.3 15.6,14.1 C15.6,12.9687084 14.9396,12 13.8,12 Z" fill="#000000" opacity="0.3"/>
+										</g>
+									</svg> Home Section
+								</h3>
+								
+								<h4>Menu</h4>
+								
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="menu page-active-1"&gt;
+    &lt;div class="menu-item item-* m-btn js-btn" data-page="*"&gt;
+        &lt;span class="title"&gt;
+            &lt;!-- Icon --&gt;
+        &lt;/span&gt;
+    &lt;/div>&gt;
+&lt;/div>&gt;</code></pre>
+								
+								<h4>Banner</h4>
+							
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="banner"&gt;
+    &lt;h1&gt;&lt;!-- Your Name --&gt;&lt;/h1&gt;			
+    &lt;p class="cd-headline rotate-1"&gt;
+        &lt;!-- Your information --&gt;
+    &lt;/p&gt;
+&lt;/div&gt;</code></pre>
+								
+								<h4>Social icons</h4>
+								
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="social"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Ig&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Fb&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+							
+
+							</div>
+							
+							<br><hr><br>
+							
+							<div id="about" class="dop">
+                            	<h3>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+    									<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    										<polygon points="0 0 24 0 24 24 0 24"></polygon>
+    										<path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.5"></path>
+    										<path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"></path>
+    									</g>
+    								</svg> About Section
+								</h3>
+							
+                            	<p>This section contains the personal information, service, testimonials, experience & eduction, skills.</p><br>
+							
+								<p class="alert alert-danger"><b>User Photo:</b> should of 400x400 resolution.</p>
+
+                            	<h4>Service</h4>
+								
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="service-item"&gt;
+    &lt;i class="fas fa-*"&gt;&lt;/i&gt;
+    &lt;span&gt;&lt;!-- Number --&gt;&lt;/span&gt;
+    &lt;h4&gt;&lt;!-- Service Title --&gt;&lt;/h4&gt;
+    &lt;p&gt;&lt;!-- Description --&gt;&lt;/p&gt;
+&lt;/div></code></pre>
+
+								
+							
+								<h4>Skills</h4>
+
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="skill-item"&gt;
+    &lt;h4 class="progress-title"&gt;&lt;!-- Name Skill --&gt;&lt;/h4&gt;
+    &lt;div class="progress"&gt;
+        &lt;div class="progress-bar" style="width:98%"&gt;&lt;!-- 'width' is the experience you gained --&gt;
+            &lt;div class="progress-value"&gt;98%&lt;/div&gt;&lt;!-- Should edit it the same as above attribute 'width' --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+							
+								<h4>Testimonials</h4>
+								
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="testimonials"&gt;
+    &lt;div class="testimonials-img"&gt;
+        &lt;div class="img-item" id="img1"&gt;
+            &lt;img src="img/testimonial/img-*.jpg" alt=""&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+	
+    &lt;div class="testimonials-wrap swiper-wrapper"&gt;
+        &lt;div class="testimonial-item swiper-slide" data-target="img1"&gt;
+            &lt;div class="item-card"&gt;
+                &lt;div class="item-content"&gt;
+                    &lt;h3&gt;&lt;!-- User Name --&gt;&lt;/h3&gt;
+                    &lt;span&gt;&lt;!-- Date --&gt;&lt;/span&gt;
+                    &lt;p&gt;&lt;!-- Comment --&gt;&lt;/p&gt;
+                    &lt;div class="heart-btn"&gt;
+                        &lt;button class="favorite js-fav"&gt;&lt;span class="heart"&gt;&lt;/span&gt; Like&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+							
+								<h4>Experience & Eduction</h4>
+								
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;!-- Experience Item --&gt;
+&lt;div class="single-wp width-sm process-*"&gt;
+    &lt;h4&gt;&lt;!--Course or Position--&gt; &lt;i class="fas fa-*">&lt;/i&gt;&lt;/h4&gt;
+    &lt;p class="wp-step"&gt;&lt;!-- Year from/till --&gt; | &lt;!-- School or Company Name --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- Description --&gt;&lt;/p&gt;
+&lt;/div&gt;
+							
+&lt;!-- Experience & Eduction Circle--&gt;
+&lt;div class="wp-circle"&gt;
+    &lt;h4&gt;&lt;Experience Eduction&lt;/h4&gt;
+    &lt;span class="dots top-l"&gt;&lt;/span&gt;&lt;!-- Dot in the upper left --&gt;
+    &lt;span class="dots bottom-l"&gt;&lt;/span&gt;&lt;!-- Dot in the lower left --&gt;
+    &lt;span class="dots center-l"&gt;&lt;/span&gt;&lt;!-- Center point left --&gt;
+    &lt;span class="dots center-r"&gt;&lt;/span&gt;&lt;!-- Center point right --&gt;
+    &lt;span class="dots top-r"&gt;&lt;/span&gt;&lt;!-- Dot in the upper right --&gt;
+    &lt;span class="dots bottom-r"&gt;&lt;/span&gt;&lt;!-- Dot in the lower right --&gt;
+&lt;/div&gt;</code></pre>
+							
+							</div>
+							
+							<br><hr><br>
+							
+							<div id="portfolio" class="dop">
+                            	<h3>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect x="0" y="0" width="24" height="24"/>
+											<path d="M8,3 L8,3.5 C8,4.32842712 8.67157288,5 9.5,5 L14.5,5 C15.3284271,5 16,4.32842712 16,3.5 L16,3 L18,3 C19.1045695,3 20,3.8954305 20,5 L20,21 C20,22.1045695 19.1045695,23 18,23 L6,23 C4.8954305,23 4,22.1045695 4,21 L4,5 C4,3.8954305 4.8954305,3 6,3 L8,3 Z" fill="#000000" opacity="0.3"/>
+											<path d="M11,2 C11,1.44771525 11.4477153,1 12,1 C12.5522847,1 13,1.44771525 13,2 L14.5,2 C14.7761424,2 15,2.22385763 15,2.5 L15,3.5 C15,3.77614237 14.7761424,4 14.5,4 L9.5,4 C9.22385763,4 9,3.77614237 9,3.5 L9,2.5 C9,2.22385763 9.22385763,2 9.5,2 L11,2 Z" fill="#000000"/>
+											<rect fill="#000000" opacity="0.3" x="7" y="10" width="5" height="2" rx="1"/>
+											<rect fill="#000000" opacity="0.3" x="7" y="14" width="9" height="2" rx="1"/>
+										</g>
+									</svg> Portfolio Section
+								</h3>
+							
+                            	<p>This section contains the portfolio's items.</p>
+
+								<p>Portfolio Section have two parts: </p>
+                            	<ul>
+                               		<li><b>Portfolio filters</b></li>
+                               		<li><b>Portfolio item</b></li>
+								</ul>
+
+                            	<h4>Portfolio Filters</h4>
+
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;ul&gt;
+    &lt;li class="active" data-filter="*"&gt;All&lt;/li&gt;
+    &lt;li data-filter=".brand"&gt;Brand&lt;/li&gt;
+    &lt;li data-filter=".design"&gt;Design&lt;/li&gt;
+    &lt;li data-filter=".graphic"&gt;Graphic&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                            	<p>Portfolio filters are the list item when clicked it will show portfolios related to those category.<br>
+                            	<b>data-filter</b> : attribute specify the category the portfolios belongs to. It can have any value but thing to notice is that the value starts with <b>".value"</b>.</p>
+
+
+                            	<h4>Portfolio Item</h4>
+
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;figure&gt;
+    &lt;img src="img/portfolio/img-*.jpg" alt=""&gt;
+    &lt;figcaption&gt;
+        &lt;h3&gt;&lt;!-- Project Name --&gt;&lt;/h3&gt;
+        &lt;h4&gt;View Detalis&lt;/h4&gt;
+        &lt;p&gt;
+            &lt;i class="fas fa-filter"&gt;&lt;/i&gt;&lt;!-- Category --&gt;
+        &lt;/p&gt;
+        &lt;a class="*-link" href="img/portfolio/img-*.jpg"&gt;&lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+                            	<p>Portfolio item is contain inside <b>&lt;div&gt;</b> tag. It have class attribute which value are item and <b>brand</b>, <b>item</b> is used for styling the portfolio single item and <b>brand</b> is used to show which category the item belongs to in respect to the filter.<br><br>
+                            	Portfolio item has inside anchor tag. This tag has <b>class</b> and <b>href</b> attribute. The <b>class</b> attribute specify
+                            	that the link is of image type. There are <b>3</b> possible values:</p>
+                            	<ul>
+                                	<li><b>image-link</b> : This tells the scripts to show as image type and will show as popup when click.</li>
+                                	<li><b>video-link</b> : This tells the scripts to show as video type and will show as popup when click.</li>
+									<li><b>ajax-link</b> : This tells the script to show as ajax type and slide in as a page. Ajax links are pages like single-work.html which the script will import when the item is clicked.</li>
+                            	</ul>
+								
+							</div>
+							 
+							<br><hr><br>
+							
+							<div id="blog" class="dop">
+                            	<h3>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect x="0" y="0" width="24" height="24"/>
+											<rect fill="#000000" x="4" y="4" width="7" height="7" rx="1.5"/>
+										<path d="M5.5,13 L9.5,13 C10.3284271,13 11,13.6715729 11,14.5 L11,18.5 C11,19.3284271 10.3284271,20 9.5,20 L5.5,20 C4.67157288,20 4,19.3284271 4,18.5 L4,14.5 C4,13.6715729 4.67157288,13 5.5,13 Z M14.5,4 L18.5,4 C19.3284271,4 20,4.67157288 20,5.5 L20,9.5 C20,10.3284271 19.3284271,11 18.5,11 L14.5,11 C13.6715729,11 13,10.3284271 13,9.5 L13,5.5 C13,4.67157288 13.6715729,4 14.5,4 Z M14.5,13 L18.5,13 C19.3284271,13 20,13.6715729 20,14.5 L20,18.5 C20,19.3284271 19.3284271,20 18.5,20 L14.5,20 C13.6715729,20 13,19.3284271 13,18.5 L13,14.5 C13,13.6715729 13.6715729,13 14.5,13 Z" fill="#000000" opacity="0.3"/>
+										</g>
+									</svg> Blog Section
+								</h3>
+
+                           		<p>This section contains the blog items.</p>
+								
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="blog-item"&gt;
+    &lt;figure&gt;
+        &lt;img src="img/blog/img-*.jpg" alt="" /&gt;
+    &lt;/figure&gt;
+    &lt;div class="desc"&gt;
+        &lt;h3&gt;&lt;a href="blog-page.html"&gt;&lt;!-- Title --&gt;&lt;/a&gt;&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;!-- You Name --&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;&lt;!-- Category --&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;p&gt;&lt;!-- Description--&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="btn"&gt;
+        &lt;a href="blog-page.html" class="btn-st"&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+				
+                            	<p><b>Blog</b> item when click will open the link related to that blog item for example <b>single-blog.html</b> page.</p>
+
+							</div>
+							
+							<br><hr><br>
+							
+							<div id="contact" class="dop">
+                            	<h3>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect x="0" y="0" width="24" height="24"/>
+											<path d="M6,2 L18,2 C18.5522847,2 19,2.44771525 19,3 L19,12 C19,12.5522847 18.5522847,13 18,13 L6,13 C5.44771525,13 5,12.5522847 5,12 L5,3 C5,2.44771525 5.44771525,2 6,2 Z M7.5,5 C7.22385763,5 7,5.22385763 7,5.5 C7,5.77614237 7.22385763,6 7.5,6 L13.5,6 C13.7761424,6 14,5.77614237 14,5.5 C14,5.22385763 13.7761424,5 13.5,5 L7.5,5 Z M7.5,7 C7.22385763,7 7,7.22385763 7,7.5 C7,7.77614237 7.22385763,8 7.5,8 L10.5,8 C10.7761424,8 11,7.77614237 11,7.5 C11,7.22385763 10.7761424,7 10.5,7 L7.5,7 Z" fill="#000000" opacity="0.3"/>
+											<path d="M3.79274528,6.57253826 L12,12.5 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 Z" fill="#000000"/>
+										</g>
+									</svg> Contact Section
+								</h3>
+
+                            	<p>This section contains contact form, contact info, google map.</p>
+
+                            	<p><b>Contact Form</b>: Form contains the form fields for the user to send message. Form is based on ajax when submit the form will run the <b>mail.php</b> file. If everything is valid the mail will be send to the person whose email is specified in <b>mail.php</b> file.</p>
+								<p class="alert alert-danger"><b>Note:</b> Edit this line in <b>mail.php</b></p>
+							
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">$to = "you-email@example.com"; &lt;!-- Change the email to your email id --&gt;</code></pre>
+							
+								<p><b>Google Map:</b> Enter the latitude and longitude of your location.</p>
+							
+								<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div id="map" class="map" data-latlog="[&lt;!-- Your Latitude-- &gt;, &lt;!-- Your Longitude --&gt;]" data-popuptext="&lt;!-- Address --&gt;"  data-popupicon="img/marker.png"&gt;&lt;/div&gt;</code></pre>
+								
+							</div>
+							
+							<br><hr><br>
+							
+							<div id="elements" class="dop">
+                            	<h3>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+											<rect x="0" y="0" width="24" height="24"/>
+											<polygon fill="#000000" opacity="0.3" points="5 3 19 3 23 8 1 8"/>
+											<polygon fill="#000000" points="23 8 12 20 1 8"/>
+										</g>
+									</svg> Template Elements
+								</h3>
+
+								<h4>YouTube Video</h4>
+							
+							<p>In order to insert your video from youtube, change the link to it:</p>
+							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div id="video-container"&gt;
+    &lt;div id="play-video" class="player" data-property="{videoURL: '&lt;!-- Your Link --&gt;' ...&gt;&lt;/div&gt;	
+&lt;/div&gt;
+</code></pre>
+								
+								<h4>Html5 Video</h4>
+								
+								<p>To insert your video, upload your video to the <b>'video'</b> folder:</p>
+							<pre class="prettyprint code-text linenums"><code class="prettyprint">&lt;div class="html-video-container" data-vide-bg="video/&lt;!-- The name of your video --&gt;.mp4"&gt;&lt;/div&gt;
+</code></pre>
+
+								
+							</div>
+							
+                        </div>
+
+                        <div id="css" class="main">
+							
+							<br><hr><br>
+							
+                            <h2>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+									<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<polygon points="0 0 24 0 24 24 0 24"/>
+										<path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+										<rect fill="#000000" x="6" y="11" width="9" height="2" rx="1"/>
+										<rect fill="#000000" x="6" y="15" width="5" height="2" rx="1"/>
+									</g>
+								</svg> CSS Structure
+							</h2>
+
+                            <div class="file-tree">
+                                <ul>
+                                    <li><i class="far fa-folder-open" aria-hidden="true"></i>css
+                                        <ul>
+						<li><i class="far fa-folder-open" aria-hidden="true"></i>plugins</li>
+                                                <li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>bootstrap.css</li>
+                                                <li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>font-awesome.css</li>
+						<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>magnific-popup.css</li>
+						<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>simplebar.css</li>
+						<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>swiper.min.css</li>
+						<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>jquery.animatedheadline.css</li>
+						<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>map.css	</li>				
+						<li><i class="far fa-folder-open" aria-hidden="true"></i>setting</li>
+                                                <li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>*-color.css</li>
+												<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>circle.css</li>
+												<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>hexagon.css</li>
+                                                <li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>*-title.css</li>
+						<li><i class="far fa-file-code" aria-hidden="true"></i><b>style-dark.css</b></li>
+						<li><i class="far fa-file-code" aria-hidden="true"></i><b>style-light.css</b></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div><br>
+							
+							<p> <b>style-dark.css</b>: This file is the main CSS file for this template and contains a <b>Dark</b> style.<br>
+								<b>style-light.css</b>: This file is the main CSS file for this template and contains a <b>Light</b> style.<br>
+							</p>
+							<p> <b>(*-color.css)</b>: This files are for choosing highlighed color of you own choice. There are 6 color file in this template.<br><br>
+				    			<b>(*-title.css)</b>: These files are for selecting the header display box.<br><br>
+								<b>(circle.css)</b> and <b>(hexagon.css)</b>: These files are for choosing a box style. This template has 2 box styles.
+							</p>
+							
+							<p>All other <b>css</b> files are designed to maintain the basic functions of this template.<br></p>
+
+                            <p class="alert alert-danger"><b>Note:</b> Editing these files can cause unexpected behaviour to the template only edit these file if you know what you are doing.</p>
+
+                        </div>
+
+                        <div id="js" class="main">
+							<hr><br>
+                            <h2>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+									<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<polygon points="0 0 24 0 24 24 0 24"/>
+										<path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+										<rect fill="#000000" opacity="0.3" transform="translate(8.984240, 12.127098) rotate(-45.000000) translate(-8.984240, -12.127098) " x="7.41281179" y="10.5556689" width="3.14285714" height="3.14285714" rx="0.75"/>
+										<rect fill="#000000" opacity="0.3" transform="translate(15.269955, 12.127098) rotate(-45.000000) translate(-15.269955, -12.127098) " x="13.6985261" y="10.5556689" width="3.14285714" height="3.14285714" rx="0.75"/>
+										<rect fill="#000000" transform="translate(12.127098, 15.269955) rotate(-45.000000) translate(-12.127098, -15.269955) " x="10.5556689" y="13.6985261" width="3.14285714" height="3.14285714" rx="0.75"/>
+										<rect fill="#000000" transform="translate(12.127098, 8.984240) rotate(-45.000000) translate(-12.127098, -8.984240) " x="10.5556689" y="7.41281179" width="3.14285714" height="3.14285714" rx="0.75"/>
+									</g>
+								</svg> Javascript Structure
+							</h2>
+							
+                            <div class="file-tree">
+                                <ul>
+                                    <li><i class="far fa-folder-open" aria-hidden="true"></i>js
+                                        <ul>
+											<li><i class="far fa-folder-open" aria-hidden="true"></i>plugins</li>
+                                            <li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>jquery.min.js</li>
+                                            <li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>bootstrap.min.js</li>
+                                            <li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>isotope.pkgd.min.js</li>
+											<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>jquery.magnific-popup.min.js</li>
+											<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>swiper.min.js</li>
+											<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>map.min.js</li>
+											<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>jquery.animatedheadline.min.js</li>
+											<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>jquery.validation.js</li>
+											<li style="padding-left: 50px"><i class="far fa-file-code" aria-hidden="true"></i>simplebar.js</li>
+                                            <li><i class="far fa-file-code" aria-hidden="true"></i><b>main.js</b></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div><br>
+                            <p>
+							<b>main.js</b>: This file is main javascript file for this template.<br>
+                            All other <b>js</b> files contains various js library used in this template.</p>
+                            <p class="alert alert-danger"><b>Note:</b> Editing these files can cause unexpected behaviour to the template only edit these file if you know what you are doing.</p>
+
+                        </div>
+						
+                        <div id="source" class="main">
+							<hr><br>
+                            <h2>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+									<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<rect x="0" y="0" width="24" height="24"/>
+										<path d="M3.5,21 L20.5,21 C21.3284271,21 22,20.3284271 22,19.5 L22,8.5 C22,7.67157288 21.3284271,7 20.5,7 L10,7 L7.43933983,4.43933983 C7.15803526,4.15803526 6.77650439,4 6.37867966,4 L3.5,4 C2.67157288,4 2,4.67157288 2,5.5 L2,19.5 C2,20.3284271 2.67157288,21 3.5,21 Z" fill="#000000" opacity="0.3"/>
+										<path d="M11,13 L11,11 C11,10.4477153 11.4477153,10 12,10 C12.5522847,10 13,10.4477153 13,11 L13,13 L15,13 C15.5522847,13 16,13.4477153 16,14 C16,14.5522847 15.5522847,15 15,15 L13,15 L13,17 C13,17.5522847 12.5522847,18 12,18 C11.4477153,18 11,17.5522847 11,17 L11,15 L9,15 C8.44771525,15 8,14.5522847 8,14 C8,13.4477153 8.44771525,13 9,13 L11,13 Z" fill="#000000"/>
+									</g>
+								</svg> Sources and Credits
+							</h2>
+
+                            <h3>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+									<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<polygon points="0 0 24 0 24 24 0 24"/>
+										<path d="M5.85714286,2 L13.7364114,2 C14.0910962,2 14.4343066,2.12568431 14.7051108,2.35473959 L19.4686994,6.3839416 C19.8056532,6.66894833 20,7.08787823 20,7.52920201 L20,20.0833333 C20,21.8738751 19.9795521,22 18.1428571,22 L5.85714286,22 C4.02044787,22 4,21.8738751 4,20.0833333 L4,3.91666667 C4,2.12612489 4.02044787,2 5.85714286,2 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+										<rect fill="#000000" x="6" y="11" width="9" height="2" rx="1"/>
+										<rect fill="#000000" x="6" y="15" width="5" height="2" rx="1"/>
+									</g>
+								</svg> CSS and Javascripts Libraries
+							</h3>
+
+                            <ul>
+                                <li><a href="https://jquery.com/">jQuery</a></li>
+                                <li><a href="https://getbootstrap.com/">Bootstrap 4</a></li>
+                                <li><a href="https://fontawesome.com/">FontAwesome 5</a></li>
+								<li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
+								<li><a href="https://isotope.metafizzy.co/">Isotope</a></li>
+								<li><a href="https://swiperjs.com/">Swiper</a></li>
+								<li><a href="http://grsmto.github.io/simplebar/">SimpleBar</a></li>
+								<li><a href="https://codyhouse.co/demo/animated-headlines/">Animated Headlines</a></li>
+                            </ul>
+							
+							<br><hr><br>
+
+							<h3>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+									<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<rect x="0" y="0" width="24" height="24"/>
+										<path d="M0.18,19 L7.1,4.64 L14.02,19 L12.06,19 L10.3,15.28 L3.9,15.28 L2.14,19 L0.18,19 Z M7.1,8.52 L4.7,13.6 L9.5,13.6 L7.1,8.52 Z" fill="#000000"/>
+										<path d="M21.34,19 L21.34,18 C20.5,18.76 19.38,19.16 18.16,19.16 C15.22,19.16 13.06,16.9 13.06,14 C13.06,11.1 15.22,8.84 18.16,8.84 C19.38,8.84 20.5,9.24 21.34,10 L21.34,9 L23.06,9 L23.06,19 L21.34,19 Z M18.2,17.54 C19.64,17.54 20.76,16.86 21.34,15.92 L21.34,12.08 C20.76,11.14 19.64,10.46 18.2,10.46 C16.24,10.46 14.84,12.02 14.84,14 C14.84,15.98 16.24,17.54 18.2,17.54 Z" fill="#000000" opacity="0.3"/>
+									</g>
+								</svg> Fonts
+							</h3>
+							
+                            <ul>
+                                <li>Google fonts:
+                                    <ul>
+                                        <li>Poppins</li>
+                                    </ul>
+                                </li>
+                                <li>Icon fonts:
+                                    <ul>
+                                        <li>SVG Icons</li>
+										<li>Font Awesome 5</li>
+                                    </ul>
+                                </li>
+                            </ul>
+							
+							<br><hr><br>
+							
+                            <h3>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+									<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+										<polygon points="0 0 24 0 24 24 0 24"/>
+										<rect fill="#000000" opacity="0.3" x="2" y="4" width="20" height="16" rx="2"/>
+										<polygon fill="#000000" opacity="0.3" points="4 20 10.5 11 17 20"/>
+										<polygon fill="#000000" points="11 20 15.5 14 20 20"/>
+										<circle fill="#000000" opacity="0.3" cx="18.5" cy="8.5" r="1.5"/>
+									</g>
+								</svg> Images
+							</h3>
+							
+                            <p><b>Images are not included.</b> All images are replaced with the placeholder. Images used in this template can be find at:</p>
+
+                            <ul>
+                                <li><a href="https://www.pexels.com/">Pexels</a></li>
+                                <li><a href="https://www.unsplash.com/">Unsplash</a></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <p class="alert alert-danger">Thank you again for purchasing this template. If you have additional questions, I will be happy to help you. For any questions, please refer to my page in ThemeForest</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <!--Documentation End-->
+
+        <script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/prettify.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
