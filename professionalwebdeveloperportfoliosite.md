@@ -6,31 +6,39 @@
   
   ## Table of Contents
 
-  -[Description](#Description) <br>
+  * [Description](#Description) <br>
 
-  -[Installation](#Installation) <br>
+  * [Installation](#Installation) <br>
 
-  -[Contributions](#Contributions) <br>
+  * [Contributions](#Contributions) <br>
 
-  -[Test](#Test) <br>
+  * [Test](#Test) <br>
 
-  -[Email](#Email) <br>
+  * [Email](#Email) <br>
 
-  -[GitHub](#Github) <br>
+  * [GitHub](#Github) <br>
 
-  -[Questions](#Questions) <br>
+  * [Questions](#Questions) <br>
 
   ## Description
+
   This is a collection of my work thus far. It includes snapshots of both my time as a musician and a web developer and my marketable skills. The site also includes external links to all my professional sites and current project builds.
 
-  ## Installation
+  ## Images
+
+  ![Homepage]()
+  ![Homepage]()
+  ![Homepage]()
+  ![Homepage]()
+  ![Homepage]()
+  ![Homepage]()
   
 
   ## Contributions
   Isaac Frishman
 
   ## Test
-  
+    Extensive Debugging done by owner of the project.
 
   ## License
   Licensed under Apache
